@@ -7,11 +7,15 @@ Note: if there is nothing to sum, the sum is default to 0.
 */
 
 function positiveSum(arr) {
+  // create total to keep count
   let total = 0;
+  // loop through each element in arr
   for (let i = 0; i < arr.length; i++) {
+    // if the element is larger than 0 add it to total.
     if (arr[i] > 0) {
       total += arr[i];
     }
   }
+  // return the total
   return total;
 }
